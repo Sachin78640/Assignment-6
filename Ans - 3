@@ -1,0 +1,26 @@
+The `call`, `apply`, and `bind` methods are used in JavaScript to manipulate the context of a function and explicitly set the value of the `this` keyword within that function. While they serve a similar purpose, there are differences in how they are used and how they pass arguments to the target function.
+
+1. `call` method:
+   - The `call` method is a built-in function in JavaScript that allows you to invoke a function with a specified `this` value and individual arguments passed as comma-separated values.
+   - It takes the `this` value as its first argument, followed by the individual arguments to be passed to the function.
+   - The `call` method immediately invokes the function.
+   - Example: `myFunction.call(thisValue, arg1, arg2, ...)`
+
+2. `apply` method:
+   - The `apply` method is similar to the `call` method, but it accepts arguments as an array or an array-like object instead of individual arguments.
+   - It takes the `this` value as its first argument, followed by an array or array-like object containing the arguments to be passed to the function.
+   - The `apply` method immediately invokes the function.
+   - Example: `myFunction.apply(thisValue, [arg1, arg2, ...])`
+
+3. `bind` method:
+   - The `bind` method returns a new function with a bound `this` value, which can be invoked later.
+   - It takes the `this` value as its first argument, followed by individual arguments to be partially applied to the function (optional).
+   - The `bind` method does not immediately invoke the function; instead, it creates a new function with the specified `this` value and any partially applied arguments.
+   - Example: `var boundFunction = myFunction.bind(thisValue, arg1, arg2, ...)`
+
+Key differences:
+- `call` and `apply` immediately invoke the function, while `bind` returns a new function with the bound context.
+- `call` accepts individual arguments, while `apply` accepts an array or array-like object of arguments.
+- `bind` allows you to partially apply arguments and creates a new function that can be invoked later.
+
+These methods are often used when you want to control the value of `this` within a function or when you need to pass arguments to a function in a specific way. They provide flexibility and allow you to manipulate the execution context of functions.
