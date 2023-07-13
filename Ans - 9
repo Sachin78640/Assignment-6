@@ -1,0 +1,15 @@
+In JavaScript, a class is a blueprint or template that defines the structure and behavior of objects. It is a way to create objects with similar characteristics and functionality based on a common definition. Classes serve as a foundation for creating multiple instances of objects that share the same attributes and methods.
+
+JavaScript introduced the class syntax in ECMAScript 2015 (ES6) to provide a more structured and object-oriented approach to programming. Prior to ES6, JavaScript used prototype-based inheritance.
+
+Here are the key points about classes in JavaScript:
+
+Class declaration: A class is declared using the class keyword, followed by the name of the class, typically capitalized. The class body contains the definitions of the class's properties (attributes) and methods.
+
+Constructors: A constructor method is a special method within a class that is used to initialize objects created from the class. It is defined using the constructor keyword. The constructor is automatically called when a new object is created using the new keyword.
+
+Properties: Class properties are variables that hold data associated with the objects created from the class. They are defined within the class body and are accessed using the this keyword.
+
+Methods: Class methods are functions defined within the class that define the behavior of the objects. They can be accessed through instances of the class. Methods can be defined directly within the class body or using shorthand syntax.
+
+Inheritance: JavaScript classes support inheritance through the extends keyword. A class can extend another class, inheriting its properties and methods. Inherited properties and methods can be overridden or extended in the derived class.
